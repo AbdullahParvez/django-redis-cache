@@ -1,7 +1,10 @@
-from django.conf.urls import url
+from django.urls import path
 from .views import recipes_view
 
+app_name = 'cookbbok'
 
 urlpatterns = [
-    url(r'^$', recipes_view),
+    path('', recipes_view),
 ]
+
+
